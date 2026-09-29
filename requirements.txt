@@ -1,0 +1,14 @@
+# Core data / ML
+numpy
+pandas
+scikit-learn
+
+# Backend
+fastapi
+uvicorn
+
+# Network analysis
+scapy
+
+# Environment
+python-dotenv
