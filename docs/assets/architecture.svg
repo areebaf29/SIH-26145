@@ -1,0 +1,87 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1500" height="900" viewBox="0 0 1500 900">
+<defs>
+ <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#061326"/><stop offset="1" stop-color="#02050b"/></linearGradient>
+ <linearGradient id="blue" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#1b8cff"/><stop offset="1" stop-color="#4de3ff"/></linearGradient>
+ <linearGradient id="purple" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#7a3cff"/><stop offset="1" stop-color="#d46cff"/></linearGradient>
+ <linearGradient id="green" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#00d084"/><stop offset="1" stop-color="#67ff9b"/></linearGradient>
+ <linearGradient id="yellow" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#ffbf22"/><stop offset="1" stop-color="#ffe46b"/></linearGradient>
+ <linearGradient id="red" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#ff315f"/><stop offset="1" stop-color="#ff7b5c"/></linearGradient>
+ <filter id="glow"><feGaussianBlur stdDeviation="4" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+ <marker id="arr" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#55d9ff"/></marker>
+</defs>
+<rect width="1500" height="900" fill="url(#bg)"/>
+<text x="80" y="72" fill="#f5f8ff" font-family="Arial" font-size="48" font-weight="700">NexGuard</text>
+<text x="395" y="72" fill="#8bdcff" font-family="Arial" font-size="26">SYSTEM ARCHITECTURE</text>
+<text x="395" y="105" fill="#6ea6d9" font-family="Arial" font-size="17">AI-powered cybersecurity &amp; forensic monitoring</text>
+<rect x="50" y="145" width="390" height="520" rx="24" fill="#180813" stroke="#ff315f" stroke-width="3"/>
+<text x="245" y="185" text-anchor="middle" fill="#fff" font-family="Arial" font-size="25" font-weight="700">CRITICAL INFRASTRUCTURE</text>
+<text x="245" y="216" text-anchor="middle" fill="#ff8ba6" font-family="Arial" font-size="18">(PRODUCTION NETWORK)</text>
+<circle cx="245" cy="340" r="85" fill="#271124" stroke="#ff315f"/>
+<text x="245" y="334" text-anchor="middle" fill="#fff" font-family="Arial" font-size="19" font-weight="700">IT / OT</text>
+<text x="245" y="360" text-anchor="middle" fill="#ffb0c0" font-family="Arial" font-size="16">NETWORK</text>
+<rect x="95" y="455" width="130" height="70" rx="15" fill="#101b33" stroke="#4de3ff"/>
+<text x="160" y="497" text-anchor="middle" fill="#fff" font-family="Arial" font-size="16">Servers</text>
+<rect x="265" y="455" width="130" height="70" rx="15" fill="#101b33" stroke="#4de3ff"/>
+<text x="330" y="497" text-anchor="middle" fill="#fff" font-family="Arial" font-size="16">Gateway</text>
+<text x="245" y="585" text-anchor="middle" fill="#ffbfca" font-family="Arial" font-size="16">SCADA • Control • Network Devices</text>
+<line x1="440" y1="405" x2="515" y2="405" stroke="#ff4f6e" stroke-width="6" marker-end="url(#arr)"/>
+<text x="476" y="370" text-anchor="middle" fill="#ff6b82" font-family="Arial" font-size="17" font-weight="700">ONE-WAY</text>
+<text x="476" y="391" text-anchor="middle" fill="#ff6b82" font-family="Arial" font-size="17" font-weight="700">TRAFFIC</text>
+<rect x="500" y="345" width="190" height="115" rx="22" fill="#06294b" stroke="#27b9ff" stroke-width="3" filter="url(#glow)"/>
+<text x="595" y="382" text-anchor="middle" fill="#fff" font-family="Arial" font-size="18" font-weight="700">Traffic Mirror</text>
+<text x="595" y="408" text-anchor="middle" fill="#9cecff" font-family="Arial" font-size="17">/ Data Diode</text>
+<text x="595" y="438" text-anchor="middle" fill="#ff7b8e" font-family="Arial" font-size="15">NO RETURN PATH</text>
+<rect x="715" y="145" width="735" height="520" rx="24" fill="#041a17" stroke="#36efbb" stroke-width="3" stroke-dasharray="10 8"/>
+<text x="1082" y="188" text-anchor="middle" fill="#d7fff4" font-family="Arial" font-size="26" font-weight="700">ISOLATED MONITORING ENCLAVE</text>
+<text x="1082" y="215" text-anchor="middle" fill="#71dcb7" font-family="Arial" font-size="17">(AIR-GAPPED / SECURE ENVIRONMENT)</text>
+<rect x="740" y="255" width="150" height="175" rx="18" fill="#082e4e" stroke="#28bfff" stroke-width="3"/>
+<text x="815" y="292" text-anchor="middle" fill="#9beaff" font-family="Arial" font-size="18" font-weight="700">Traffic</text>
+<text x="815" y="317" text-anchor="middle" fill="#9beaff" font-family="Arial" font-size="18" font-weight="700">Capture</text>
+<text x="815" y="360" text-anchor="middle" fill="#fff" font-family="Arial" font-size="14">Packet / Flow</text>
+<text x="815" y="383" text-anchor="middle" fill="#fff" font-family="Arial" font-size="14">Collection</text>
+<line x1="690" y1="405" x2="740" y2="342" stroke="#54dfff" stroke-width="4" marker-end="url(#arr)"/>
+<rect x="915" y="255" width="150" height="175" rx="18" fill="#24104b" stroke="#bd67ff" stroke-width="3"/>
+<text x="990" y="292" text-anchor="middle" fill="#efc6ff" font-family="Arial" font-size="18" font-weight="700">Preprocessing</text>
+<text x="990" y="317" text-anchor="middle" fill="#efc6ff" font-family="Arial" font-size="18" font-weight="700">&amp; Features</text>
+<text x="990" y="360" text-anchor="middle" fill="#fff" font-family="Arial" font-size="14">Cleaning</text>
+<text x="990" y="383" text-anchor="middle" fill="#fff" font-family="Arial" font-size="14">Normalization</text>
+<line x1="890" y1="342" x2="915" y2="342" stroke="#d17aff" stroke-width="4" marker-end="url(#arr)"/>
+<rect x="1090" y="255" width="160" height="175" rx="18" fill="#3b2b05" stroke="#ffd34e" stroke-width="3"/>
+<text x="1170" y="292" text-anchor="middle" fill="#fff0a7" font-family="Arial" font-size="18" font-weight="700">AI / ML Engine</text>
+<text x="1170" y="317" text-anchor="middle" fill="#fff0a7" font-family="Arial" font-size="17">Threat Detection</text>
+<text x="1170" y="360" text-anchor="middle" fill="#fff" font-family="Arial" font-size="14">Anomaly Detection</text>
+<text x="1170" y="383" text-anchor="middle" fill="#fff" font-family="Arial" font-size="14">Machine Learning</text>
+<line x1="1065" y1="342" x2="1090" y2="342" stroke="#ffd85a" stroke-width="4" marker-end="url(#arr)"/>
+<rect x="1275" y="255" width="150" height="175" rx="18" fill="#3c0716" stroke="#ff5072" stroke-width="3"/>
+<text x="1350" y="292" text-anchor="middle" fill="#ffd2dc" font-family="Arial" font-size="18" font-weight="700">Threat</text>
+<text x="1350" y="317" text-anchor="middle" fill="#ffd2dc" font-family="Arial" font-size="18" font-weight="700">Classification</text>
+<text x="1350" y="357" text-anchor="middle" fill="#fff" font-family="Arial" font-size="13">DDoS / DoS</text>
+<text x="1350" y="378" text-anchor="middle" fill="#fff" font-family="Arial" font-size="13">Port Scan</text>
+<text x="1350" y="399" text-anchor="middle" fill="#fff" font-family="Arial" font-size="13">Brute Force</text>
+<line x1="1250" y1="342" x2="1275" y2="342" stroke="#ff718d" stroke-width="4" marker-end="url(#arr)"/>
+<rect x="760" y="475" width="205" height="135" rx="18" fill="#073324" stroke="#35e6a1" stroke-width="3"/>
+<text x="862" y="512" text-anchor="middle" fill="#b9ffe5" font-family="Arial" font-size="18" font-weight="700">🚨 Real-Time Alerts</text>
+<text x="862" y="545" text-anchor="middle" fill="#fff" font-family="Arial" font-size="14">Severity • Source/Destination</text>
+<text x="862" y="570" text-anchor="middle" fill="#fff" font-family="Arial" font-size="14">Protocol • Confidence</text>
+<rect x="995" y="475" width="205" height="135" rx="18" fill="#24104b" stroke="#bd67ff" stroke-width="3"/>
+<text x="1097" y="512" text-anchor="middle" fill="#efc6ff" font-family="Arial" font-size="18" font-weight="700">📋 Forensic Records</text>
+<text x="1097" y="545" text-anchor="middle" fill="#fff" font-family="Arial" font-size="14">Event Evidence</text>
+<text x="1097" y="570" text-anchor="middle" fill="#fff" font-family="Arial" font-size="14">Logs • Hashes • Timeline</text>
+<rect x="1230" y="475" width="195" height="135" rx="18" fill="#052b46" stroke="#25d1ff" stroke-width="3"/>
+<text x="1327" y="512" text-anchor="middle" fill="#9cecff" font-family="Arial" font-size="18" font-weight="700">🔗 Blockchain</text>
+<text x="1327" y="538" text-anchor="middle" fill="#9cecff" font-family="Arial" font-size="18">Integrity Layer</text>
+<text x="1327" y="570" text-anchor="middle" fill="#fff" font-family="Arial" font-size="14">SHA-256 • Tamper Evident</text>
+<line x1="1350" y1="430" x2="860" y2="475" stroke="#61dfff" stroke-width="3" marker-end="url(#arr)"/>
+<line x1="1350" y1="430" x2="1097" y2="475" stroke="#c680ff" stroke-width="3" marker-end="url(#arr)"/>
+<line x1="1097" y1="610" x2="1230" y2="610" stroke="#c680ff" stroke-width="3" marker-end="url(#arr)"/>
+<rect x="220" y="705" width="1230" height="145" rx="24" fill="#05111f" stroke="#23b9ff" stroke-width="3"/>
+<text x="835" y="738" text-anchor="middle" fill="#fff" font-family="Arial" font-size="22" font-weight="700">🖥️ SECURITY DASHBOARD</text>
+<rect x="250" y="760" width="260" height="65" rx="12" fill="#081d33" stroke="#2cbcff"/>
+<text x="380" y="798" text-anchor="middle" fill="#9beaff" font-family="Arial" font-size="15">Live Threats</text>
+<rect x="530" y="760" width="260" height="65" rx="12" fill="#081d33" stroke="#7f63ff"/>
+<text x="660" y="798" text-anchor="middle" fill="#d7c8ff" font-family="Arial" font-size="15">Network Traffic</text>
+<rect x="810" y="760" width="260" height="65" rx="12" fill="#081d33" stroke="#ffd34e"/>
+<text x="940" y="798" text-anchor="middle" fill="#fff0a7" font-family="Arial" font-size="15">Threat Statistics</text>
+<rect x="1090" y="760" width="330" height="65" rx="12" fill="#081d33" stroke="#ff5072"/>
+<text x="1255" y="798" text-anchor="middle" fill="#ffd2dc" font-family="Arial" font-size="15">Recent Alerts</text>
+</svg>
