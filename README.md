@@ -1,364 +1,230 @@
-# NexGuard
+# 🛡️ NEXGUARD
 
-## AI-Powered Real-Time Cybersecurity Threat Detection & Forensic Monitoring
+<div align="center">
 
-**Smart India Hackathon 2026 — Problem Statement ID: SIH26145**
+### AI-POWERED REAL-TIME CYBERSECURITY & FORENSIC MONITORING
+
+**Smart India Hackathon 2026 · Problem Statement ID: SIH26145**
+
+<p>
+  <img src="https://img.shields.io/badge/SIH-2026-0A0A0A?style=for-the-badge">
+  <img src="https://img.shields.io/badge/AI%2FML-Threat%20Detection-0A0A0A?style=for-the-badge">
+  <img src="https://img.shields.io/badge/Critical%20Infrastructure-Security-0A0A0A?style=for-the-badge">
+  <img src="https://img.shields.io/badge/Blockchain-Forensic%20Integrity-0A0A0A?style=for-the-badge">
+</p>
+
+> **Observe Everything. Detect Threats Locally. Preserve Evidence.**
+
+</div>
 
 ---
 
-## 📌 Overview
+## 🌐 What is NexGuard?
 
 **NexGuard** is an AI-powered cybersecurity monitoring and threat detection platform designed for **critical infrastructure networks**.
 
-Critical infrastructure operators need to monitor network traffic continuously while ensuring that their monitoring and analytics systems cannot become a pathway back into the production network.
+It combines:
 
-NexGuard addresses this challenge through a **secure, one-way monitoring architecture** combined with **local AI/ML-based threat detection, real-time alerting, and blockchain-backed forensic integrity**.
+- 🧠 AI/ML-based threat detection
+- 📡 Real-time network traffic monitoring
+- 🔒 One-way monitoring architecture
+- 🚨 Threat classification and alerts
+- 🔗 Blockchain-backed forensic integrity
+- 🖥️ Security visualization
 
-The system analyzes mirrored network traffic inside an isolated monitoring environment, detects suspicious activities locally, classifies potential cyber threats, and maintains tamper-evident records for forensic investigation.
-
----
-
-## 🎯 Problem Statement
-
-Critical infrastructure networks such as power grids, transportation systems, industrial facilities, government infrastructure, and other operational technology environments require continuous cybersecurity monitoring.
-
-Traditional monitoring architectures face a fundamental challenge:
-
-> The monitoring system must be able to observe network traffic without creating a communication path that could allow a compromised monitoring system to attack or pivot into the production network.
-
-Passive network mirroring and hardware data diodes provide strong isolation, but they also create challenges for real-time analysis, automated detection, alert generation, and forensic evidence management.
-
-The solution therefore requires a system capable of:
-
-- Monitoring network traffic in real time
-- Detecting and classifying cybersecurity threats
-- Operating within an isolated monitoring environment
-- Preventing the analytics system from directly interacting with the production network
-- Generating actionable security alerts
-- Preserving trustworthy forensic evidence
-- Maintaining the integrity and traceability of security events
+> **Core principle:** the monitoring system observes the production network without becoming a pathway back into it.
 
 ---
 
-# 💡 Proposed Solution
+## 🚨 Problem → Solution
 
-NexGuard introduces a **secure AI-driven cybersecurity monitoring pipeline** that operates on traffic received through a one-way monitoring channel.
+Critical infrastructure requires continuous security monitoring, but connecting analytics systems directly to production infrastructure can introduce additional attack surface.
 
-### Core workflow
+NexGuard addresses this by combining **one-way traffic observation + an isolated monitoring enclave + local AI inference + tamper-evident forensic records**.
 
 ```text
-Production Network
-        │
-        │  One-Way Traffic Mirror / Data Diode
-        ▼
-┌─────────────────────────┐
-│  Isolated Monitoring    │
-│       Enclave           │
-└────────────┬────────────┘
-             │
-             ▼
-      Traffic Capture
-             │
-             ▼
-     Data Preprocessing
-             │
-             ▼
-       AI/ML Detection
-             │
-             ▼
-      Threat Classification
-             │
-      ┌──────┴───────┐
-      ▼              ▼
- Real-Time        Forensic
-   Alert           Record
-      │              │
-      ▼              ▼
- Dashboard       Blockchain
-                 Integrity
-```
+🌐 PRODUCTION NETWORK
+          │
+          │  ONE-WAY TRAFFIC
+          ▼
+📡 TRAFFIC MIRROR / DATA DIODE
+          │
+          ▼
+🔒 ISOLATED MONITORING ENCLAVE
+          │
+          ├── 📦 Traffic Capture
+          ├── ⚙️ Preprocessing
+          ├── 🧠 AI/ML Detection
+          ├── 🎯 Threat Classification
+          ├── 🚨 Real-Time Alerts
+          └── 🔗 Blockchain Integrity
 
-The monitoring environment has **no direct return path to the production network**, reducing the risk of the monitoring infrastructure becoming an attack vector.
-
----
-
-# 🔐 Key Features
-
-## 1. Real-Time Network Monitoring
-
-NexGuard continuously processes mirrored network traffic to identify abnormal or suspicious activities.
-
-The system can analyze relevant network characteristics such as:
-
-- Source and destination information
-- Ports and protocols
-- Packet/flow characteristics
-- Connection behavior
-- Traffic volume
-- Temporal patterns
-- Other extracted network features
-
----
-
-## 2. AI/ML-Based Threat Detection
-
-Machine learning models analyze network traffic and identify deviations from expected behavior.
-
-The detection pipeline can support:
-
-- Anomaly detection
-- Malicious traffic classification
-- Behavioral analysis
-- Suspicious communication detection
-- Network intrusion detection
-
-The AI engine is designed to operate **locally within the monitoring environment**, avoiding the need to continuously send sensitive network traffic to external cloud services.
-
----
-
-## 3. Threat Classification
-
-Detected events can be categorized into relevant cybersecurity threat classes.
-
-Depending on the trained model and dataset, NexGuard can support detection of threats such as:
-
-- Denial-of-Service / DDoS activity
-- Port scanning
-- Brute-force attempts
-- Network intrusion
-- Malware-related traffic
-- Suspicious network behavior
-- Command-and-control communication
-- Anomalous traffic patterns
-
-> The exact threat classes depend on the datasets and ML models integrated into the implementation.
-
----
-
-## 4. Real-Time Alerting
-
-When suspicious traffic is detected, NexGuard generates security alerts containing relevant information such as:
-
-- Threat category
-- Severity
-- Timestamp
-- Source
-- Destination
-- Protocol
-- Detection confidence
-- Relevant traffic characteristics
-
-This allows security teams to quickly investigate potentially malicious activity.
-
----
-
-# ⛓️ Blockchain-Based Forensic Integrity
-
-NexGuard incorporates blockchain technology to provide a **tamper-evident record of security events and forensic evidence**.
-
-Instead of relying solely on conventional logs, important event information can be hashed and recorded in a blockchain-based integrity layer.
-
-### Forensic workflow
-
-```text
-Detected Threat
-      │
-      ▼
-Generate Security Event
-      │
-      ▼
-Create Evidence Hash
-      │
-      ▼
-Record Hash / Metadata
-      │
-      ▼
-Blockchain Ledger
-      │
-      ▼
-Tamper-Evident Audit Trail
-```
-
-This helps provide:
-
-- Evidence integrity
-- Event traceability
-- Auditability
-- Tamper detection
-- Chain-of-custody support
-
-Blockchain is therefore used as an **integrity and verification layer**, rather than as the primary network-monitoring mechanism.
-
----
-
-# 🛡️ Security Architecture
-
-A key design principle of NexGuard is **network isolation**.
-
-```text
-                 PRODUCTION NETWORK
-                        │
-                        │
-                 Traffic Mirroring
-                        │
-                        ▼
-              ┌──────────────────┐
-              │ One-Way Channel  │
-              │ / Data Diode     │
-              └────────┬─────────┘
-                       │
-                       ▼
-          ┌─────────────────────────┐
-          │   MONITORING ENCLAVE    │
-          │                         │
-          │ Traffic Capture         │
-          │        ↓                │
-          │ Preprocessing           │
-          │        ↓                │
-          │ AI Threat Detection     │
-          │        ↓                │
-          │ Threat Classification   │
-          │        ↓                │
-          │ Alert + Forensics       │
-          │        ↓                │
-          │ Blockchain Integrity    │
-          └─────────────────────────┘
-```
-
-The monitoring and analytics environment is intentionally separated from the production network.
-
-This reduces the possibility of a compromised monitoring component being used as a pivot into the critical infrastructure network.
-
----
-
-# 🧠 AI Pipeline
-
-```text
-Raw Network Traffic
-        │
-        ▼
-Packet / Flow Capture
-        │
-        ▼
-Feature Extraction
-        │
-        ▼
-Data Preprocessing
-        │
-        ▼
-Feature Engineering
-        │
-        ▼
-ML Model
-        │
-        ▼
-Anomaly / Threat Detection
-        │
-        ▼
-Threat Classification
-        │
-        ▼
-Alert Generation
-```
-
-The AI pipeline can be trained and evaluated using appropriate cybersecurity datasets before deployment in the monitoring environment.
-
----
-
-# 🖥️ Dashboard
-
-The NexGuard dashboard provides security personnel with a centralized view of detected activity.
-
-Potential dashboard components include:
-
-- Real-time threat alerts
-- Threat severity
-- Threat categories
-- Traffic statistics
-- Detection confidence
-- Source/destination information
-- Historical security events
-- Incident timelines
-- Forensic evidence status
-- Blockchain verification status
-
----
-
-# 🏗️ System Architecture
-
-```text
-┌──────────────────────────────────────────────────────────┐
-│                   CRITICAL INFRASTRUCTURE                │
-│                                                          │
-│   OT / IT Network → Gateway / Peering Link              │
-└──────────────────────────┬───────────────────────────────┘
-                           │
-                           │ One-Way Monitoring
-                           ▼
-┌──────────────────────────────────────────────────────────┐
-│                 MONITORING ENCLAVE                       │
-│                                                          │
-│  ┌───────────────┐                                       │
-│  │ Traffic       │                                       │
-│  │ Capture       │                                       │
-│  └───────┬───────┘                                       │
-│          ▼                                               │
-│  ┌───────────────┐                                       │
-│  │ Preprocessing │                                       │
-│  └───────┬───────┘                                       │
-│          ▼                                               │
-│  ┌───────────────┐                                       │
-│  │ AI/ML Engine  │                                       │
-│  └───────┬───────┘                                       │
-│          ▼                                               │
-│  ┌────────────────────┐                                  │
-│  │ Threat             │                                  │
-│  │ Classification     │                                  │
-│  └─────────┬──────────┘                                  │
-│            │                                             │
-│       ┌────┴─────┐                                       │
-│       ▼          ▼                                       │
-│   ┌───────┐  ┌────────────┐                              │
-│   │Alert  │  │ Forensics  │                              │
-│   │Engine │  │ & Logging  │                              │
-│   └───┬───┘  └─────┬──────┘                              │
-│       │             ▼                                     │
-│       │       ┌──────────────┐                            │
-│       │       │ Blockchain   │                            │
-│       │       │ Integrity    │                            │
-│       │       └──────────────┘                            │
-│       │                                                  │
-│       ▼                                                  │
-│   ┌──────────────────┐                                   │
-│   │ Security         │                                   │
-│   │ Dashboard        │                                   │
-│   └──────────────────┘                                   │
-└──────────────────────────────────────────────────────────┘
+          ✕ NO RETURN PATH
 ```
 
 ---
 
-# 🧰 Technology Stack
+## 🏗️ System Architecture
 
-| Layer | Technologies |
+<div align="center">
+
+<img src="docs/assets/architecture.svg"
+     alt="NexGuard colorful system architecture"
+     width="100%">
+
+<p><b>Figure 1 — NexGuard System Architecture</b></p>
+
+</div>
+
+---
+
+## ⚡ Core Capabilities
+
+| Capability | Purpose |
 |---|---|
-| Network Monitoring | Packet/Flow Capture, Network Telemetry |
-| Programming | Python |
-| AI/ML | Machine Learning / Deep Learning |
-| Data Processing | Python, Pandas, NumPy |
-| Backend | REST API / Python Backend |
-| Frontend | Web-based Dashboard |
-| Database | Project-dependent |
-| Blockchain | Blockchain-based Integrity Layer |
-| Deployment | Local / On-Premise Monitoring Environment |
-| Security | Network Isolation / One-Way Monitoring |
+| 📡 Real-Time Monitoring | Analyze mirrored network traffic |
+| 🧠 AI/ML Detection | Identify suspicious or anomalous behavior |
+| 🎯 Threat Classification | Categorize detected activity |
+| 🚨 Alerting | Surface actionable security events |
+| 🔒 Network Isolation | Keep analytics separated from production |
+| 🔗 Blockchain Integrity | Support tamper-evident forensic verification |
+| 🖥️ Dashboard | Centralize security visibility |
 
 ---
 
-# 📁 Project Structure
+## 🧠 AI-Powered Threat Detection
+
+```mermaid
+flowchart LR
+    A["📡 Raw Traffic"]
+    --> B["📦 Packet / Flow Capture"]
+    --> C["⚙️ Feature Extraction"]
+    --> D["🧹 Preprocessing"]
+    --> E["🔢 Feature Engineering"]
+    --> F["🧠 ML Model"]
+    --> G["🔎 Anomaly Detection"]
+    --> H["🎯 Threat Classification"]
+    --> I["🚨 Alert Generation"]
+```
+
+### Detection Pipeline
+
+| Stage | Function |
+|---|---|
+| 📡 Capture | Acquire mirrored traffic |
+| ⚙️ Preprocessing | Clean and normalize data |
+| 🔢 Feature Engineering | Extract relevant network features |
+| 🧠 ML Inference | Analyze behavior |
+| 🔎 Detection | Identify suspicious activity |
+| 🎯 Classification | Categorize threats |
+| 🚨 Alerting | Generate security alerts |
+
+---
+
+## 🎯 Threat Categories
+
+NexGuard can target threat classes such as:
+
+| Threat | Detection Focus |
+|:---:|---|
+| 💥 DDoS / DoS | Abnormal traffic volume and patterns |
+| 🔎 Port Scanning | Suspicious port probing |
+| 🔑 Brute Force | Repeated authentication attempts |
+| 🦠 Malicious Traffic | Suspicious communication patterns |
+| 🚨 Network Intrusion | Abnormal connection behavior |
+| 📈 Anomalies | Deviations from normal behavior |
+| 🎯 C2 Communication | Suspicious command-and-control patterns |
+
+> Exact threat classes depend on the datasets and models used in the implementation.
+
+---
+
+## 🔗 Forensic Integrity
+
+NexGuard uses blockchain as an **integrity and verification layer**.
 
 ```text
-NexGuard/
+🚨 Threat Detected
+       ↓
+📋 Security Event
+       ↓
+🔐 Evidence Hash
+       ↓
+🔗 Blockchain Ledger
+       ↓
+✅ Tamper-Evident Record
+       ↓
+🔍 Future Verification
+```
+
+---
+
+## 🚨 Real-Time Alerting
+
+Example security event:
+
+```text
+┌─────────────────────────────────────┐
+│          🚨 SECURITY ALERT          │
+├─────────────────────────────────────┤
+│ Threat       : Port Scan            │
+│ Severity     : HIGH                 │
+│ Source       : 192.168.x.x          │
+│ Destination  : 10.x.x.x             │
+│ Protocol     : TCP                  │
+│ Confidence   : 97%                  │
+│ Status       : INVESTIGATION        │
+└─────────────────────────────────────┘
+```
+
+---
+
+## 🔄 End-to-End Workflow
+
+```mermaid
+flowchart TD
+    A["🌐 Production Network"]
+    --> B["📡 One-Way Traffic"]
+    --> C["🔒 Monitoring Enclave"]
+    --> D["📦 Capture"]
+    --> E["⚙️ Preprocess"]
+    --> F["🧠 AI Detection"]
+    --> G{"Threat?"}
+
+    G -->|No| H["✅ Normal Traffic"]
+    G -->|Yes| I["🚨 Generate Alert"]
+
+    I --> J["📋 Forensic Record"]
+    J --> K["🔐 Hash Evidence"]
+    K --> L["🔗 Blockchain"]
+
+    I --> M["🖥️ Dashboard"]
+```
+
+---
+
+## 🧩 Technology Stack
+
+| Layer | Technology |
+|:---:|---|
+| 🧠 AI/ML | Python · Machine Learning |
+| 📊 Data | Pandas · NumPy |
+| 📡 Network | Packet / Flow Analysis |
+| ⚙️ Backend | Python Backend / REST API |
+| 🖥️ Frontend | Web Dashboard |
+| 🔗 Blockchain | Integrity Layer |
+| 🔒 Deployment | Local / On-Premise |
+
+---
+
+## 📂 Repository Structure
+
+```text
+SIH-26145/
+├── README.md
+├── LICENSE
+├── .gitignore
+├── requirements.txt
 │
 ├── ai-engine/
 │   ├── models/
@@ -386,200 +252,102 @@ NexGuard/
 │   └── README.md
 │
 ├── deployment/
-│
-├── docs/
-│   ├── architecture/
-│   ├── research/
-│   └── references/
-│
 ├── tests/
 │
-├── requirements.txt
-├── .gitignore
-├── LICENSE
-└── README.md
+└── docs/
+    ├── architecture/
+    ├── research/
+    ├── references/
+    └── assets/
+        └── architecture.svg
 ```
 
 ---
 
-# 🚀 Installation
-
-Clone the repository:
+## 🚀 Getting Started
 
 ```bash
-git clone https://github.com/<organization-or-user>/NexGuard-SIH26145.git
-cd NexGuard-SIH26145
-```
+git clone https://github.com/areebaf29/SIH-26145.git
+cd SIH-26145
 
-Create a Python virtual environment:
-
-```bash
 python -m venv venv
-```
 
-Activate the environment.
-
-### Windows
-
-```bash
+# Windows
 venv\Scripts\activate
-```
 
-### Linux / macOS
+# Linux / macOS
+# source venv/bin/activate
 
-```bash
-source venv/bin/activate
-```
-
-Install dependencies:
-
-```bash
 pip install -r requirements.txt
 ```
 
----
-
-# ▶️ Running the Project
-
-The exact execution commands will depend on the final implementation.
-
-A typical deployment flow is:
-
-```text
-1. Start traffic capture
-        ↓
-2. Start preprocessing pipeline
-        ↓
-3. Start AI inference engine
-        ↓
-4. Start threat classification
-        ↓
-5. Start alert service
-        ↓
-6. Start blockchain integrity service
-        ↓
-7. Start dashboard
-```
+Run the final application using the project entry point configured by the team.
 
 ---
 
-# 📊 Dataset
+## 📊 Dataset
 
-The AI/ML component requires network-security datasets for training and evaluation.
-
-Possible datasets may include:
+Potential network-security datasets include:
 
 - CICIDS
 - UNSW-NB15
 - NSL-KDD
-- Other relevant network intrusion datasets
+- Other relevant intrusion-detection datasets
 
-Dataset selection should be based on the specific threat categories and deployment requirements of the final model.
-
-**Large datasets should not be committed directly to this repository.**
-
-Instead, provide dataset download instructions and metadata in:
-
-```text
-dataset/README.md
-```
+Large datasets should **not** be committed directly to the repository. Document sources and preprocessing in `dataset/README.md`.
 
 ---
 
-# 🔬 Research & References
+## 🔬 Research Areas
 
-The project documentation contains research related to:
-
-- Critical infrastructure cybersecurity
-- Network intrusion detection
-- AI/ML-based threat detection
-- Passive network monitoring
-- Data diodes
-- Network isolation
-- Digital forensics
-- Blockchain-based evidence integrity
-- OT/IT security
-
-Relevant references should be maintained under:
-
-```text
-docs/references/
-```
+- Critical Infrastructure Security
+- Network Intrusion Detection
+- AI-Based Threat Detection
+- Anomaly Detection
+- OT/IT Security
+- Passive Network Monitoring
+- Data Diodes
+- Digital Forensics
+- Blockchain Evidence Integrity
 
 ---
 
-# 🔒 Security Considerations
+## 📈 Future Scope
 
-NexGuard is designed around the principle that the **monitoring system should not become a pathway into the production network**.
-
-Important security considerations include:
-
-- One-way traffic flow
-- Network segmentation
-- Local inference
-- Restricted management access
-- Secure log storage
-- Tamper-evident forensic records
-- Authentication and authorization
-- Secure API communication
-- Model integrity
-- Protection of sensitive network data
+- 🧠 Advanced deep-learning models
+- 🔎 Zero-day anomaly detection
+- 🤖 Automated incident correlation
+- 🌐 Threat-intelligence integration
+- 🔬 Explainable AI
+- 🕵️ Automated forensic investigation
+- 🏭 Multi-site monitoring
+- ⚡ Edge-based inference
+- 🧩 Advanced OT/ICS protocol analysis
 
 ---
 
-# 📈 Future Scope
+## 👥 Team
 
-Potential future enhancements include:
+### 🛡️ Team NexGuard
 
-- Advanced deep-learning detection models
-- Zero-day anomaly detection
-- Automated incident correlation
-- Threat intelligence integration
-- Explainable AI for security analysts
-- Automated forensic investigation
-- Distributed blockchain verification
-- Multi-site monitoring
-- Edge-based inference
-- Digital-twin-based security analysis
-- Advanced OT/ICS protocol analysis
+Add the final team-member names and responsibilities here.
 
 ---
 
-# 👥 Team
-
-**Project:** NexGuard  
-**Hackathon:** Smart India Hackathon 2026  
-**Problem Statement:** SIH26145
-
-### Team Members
-
-| Name | Role |
-
-| AREEBA FATIMA | AI/ML |
-| AYUSH DHUMAL| Backend |
-| JAYU SIHORA | Frontend |
-| PULKIT MAHESHWARI | Blockchain |
-| KIRTAN MANIAR | Cybersecurity |
-| SAKSHI ARU | Research / Integration |
-
----
-
-# 📜 License
+## 📜 License
 
 This project is developed as part of **Smart India Hackathon 2026**.
 
-License information will be added according to the team's chosen open-source or institutional licensing requirements.
-
 ---
 
-## ⚠️ Disclaimer
+<div align="center">
 
-NexGuard is a research and prototype cybersecurity solution developed for the Smart India Hackathon.
+# 🛡️ NEXGUARD
 
-It should be tested and validated in controlled environments before being deployed in production critical-infrastructure networks.
+### SEE → ANALYZE → DETECT → ALERT → PRESERVE
 
----
+**AI-Powered Cybersecurity for Critical Infrastructure**
 
-## ⭐ Project Goal
+⭐ Star the repository to follow the project.
 
-> **Observe everything. Detect threats locally. Preserve evidence. Keep the production network isolated.**
+</div>
