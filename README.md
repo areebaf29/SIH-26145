@@ -326,11 +326,16 @@ Large datasets should **not** be committed directly to the repository. Document 
 
 ---
 
-## 👥 Team
+## 👥 Team NexGuard
 
-### 🛡️ Team NexGuard
-
-Add the final team-member names and responsibilities here.
+| Member | Role | GitHub |
+|---|---|---|
+| Areeba Fatima | AI / ML | [@areebaf29](https://github.com/areebaf29) |
+| Pulkit Maheshwari | Blockchain | [@Pulkit-ops](https://github.com/Pulkit-ops) |
+| Ayush Dhumal | Backend | Add GitHub username |
+| Jayu Sihora | Frontend | Add GitHub username |
+| Kirtan Maniar | Cybersecurity | Add GitHub username |
+| Sakshi Aru | Research / Integration | Add GitHub username |
 
 ---
 
