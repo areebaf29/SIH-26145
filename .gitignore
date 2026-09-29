@@ -1,0 +1,33 @@
+# Python
+__pycache__/
+*.py[cod]
+*.so
+.venv/
+venv/
+env/
+
+# IDE
+.vscode/
+.idea/
+
+# Environment / secrets
+.env
+.env.*
+!.env.example
+
+# ML artifacts
+*.pkl
+*.joblib
+*.h5
+*.pt
+*.pth
+
+# Large datasets
+dataset/raw/
+*.csv
+*.pcap
+*.pcapng
+
+# OS
+.DS_Store
+Thumbs.db
