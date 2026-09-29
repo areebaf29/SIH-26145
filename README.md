@@ -332,10 +332,10 @@ Large datasets should **not** be committed directly to the repository. Document 
 |---|---|---|
 | Areeba Fatima | AI / ML | [@areebaf29](https://github.com/areebaf29) |
 | Pulkit Maheshwari | Blockchain | [@Pulkit-ops](https://github.com/Pulkit-ops) |
-| Ayush Dhumal | Backend | Add GitHub username |
-| Jayu Sihora | Frontend | Add GitHub username |
+| Ayush Dhumal | Backend | [@ayushlegend-123](https://github.com/ayushlegend-123) |
+| Jayu Sihora | Frontend | [@Jayshihora](https://github.com/Jayshihora) |
 | Kirtan Maniar | Cybersecurity | [@kirtanmaniar06-hub](https://github.com/kirtanmaniar06-hub) |
-| Sakshi Aru | Research / Integration | Add GitHub username |
+| Sakshi Aru | Research / Integration | [@arusakshi](https://github.com/arusakshi) |
 
 ---
 
