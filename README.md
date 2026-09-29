@@ -334,7 +334,7 @@ Large datasets should **not** be committed directly to the repository. Document 
 | Pulkit Maheshwari | Blockchain | [@Pulkit-ops](https://github.com/Pulkit-ops) |
 | Ayush Dhumal | Backend | Add GitHub username |
 | Jayu Sihora | Frontend | Add GitHub username |
-| Kirtan Maniar | Cybersecurity | (https://github.com/kirtanmaniar06-hub)  |
+| Kirtan Maniar | Cybersecurity | (kirtanmaniar06-hub)  |
 | Sakshi Aru | Research / Integration | Add GitHub username |
 
 ---
